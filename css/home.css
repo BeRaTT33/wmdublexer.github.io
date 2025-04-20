@@ -1,0 +1,216 @@
+
+
+
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    height: 500px;
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Alt göstergeleri kaldır */
+.carousel-indicators {
+    display: none;
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+    .slider-container,
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin-left: -50px;
+    }
+    
+    .carousel-control-next {
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
+
+        /* Ürün Kartları */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 1rem;
+            overflow: hidden;
+            background-color: var(--bs-body-bg);
+          }
+        
+          .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+          }
+        
+          .modal-content.dark-mode-bg {
+            background-color: #1e1e2f;
+            color: #f8f9fa;
+            border-radius: 1rem;
+          }
+        
+          .list-unstyled li {
+            padding: 5px 0;
+            font-size: 1rem;
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-content {
+    background-color: var(--bg-light) !important;
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-light) !important;
+}
+
+[data-bs-theme="dark"] .modal-content {
+    background-color: var(--bg-light) !important;
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-light) !important;
+}
+
+/* Kapatma Butonu */
+.btn-close {
+    filter: invert(0) !important;
+}
+
+/* Modal İçi Öğeler */
+.modal-header {
+    border-bottom: 1px solid var(--border-light) !important;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-light) !important;
+}
+
+
+
+
+
+
+
+.service-card {
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    padding: 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+  
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    font-size: 2rem;
+    color: #fff;
+    animation: pop 0.6s ease;
+  }
+  @keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  [data-bs-theme="dark"] .service-card {
+    background: #212529;
+    color: #e2e6ea;
+  }
+  
+  
+/* müşteriler */
+  .yorum-kart {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+  }
+  
+  .yorum-kart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  [data-bs-theme="dark"] .yorum-kart {
+    background-color: #1e1e1e;
+    color: #e2e2e2;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+
+
+/* sıkça sorulan sorular  */
+  .accordion-button {
+    border-radius: 0.5rem !important;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  .accordion-body {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+  }
+  
+  [data-bs-theme="dark"] .accordion-button {
+    background-color: #2c2f33;
+    color: #fff;
+  }
+  [data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  [data-bs-theme="dark"] .accordion-body {
+    background-color: #1e1e1e;
+    color: #ccc;
+  }
+  
+
+/* istatistik */
+
+  .counter-card {
+    transition: all 0.3s ease;
+  }
+  .counter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
